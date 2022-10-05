@@ -4,10 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Expenses Chart Component</title>
   </head>
   <body>
+    <main>
+      <div
+        class="balance-container shared-containers flex-space-between-center"
+      >
+        <div>
+          <p class="paragraph-spacing">My balance</p>
+          <p class="balance-font heavy-bold">$921.48</p>
+        </div>
+        <div>
+          <img src="./public/logo.svg" alt="expenses component logo" />
+        </div>
+      </div>
+
+      <div class="spending-container shared-containers">
+        <div>
+          <h1>Spending - Last 7 days</h1>
+        </div>
+        <div></div>
+        <div class="flex-space-between-center">
+          <div>
+            <p class="spending-paragraph-spacing">Total this month</p>
+            <p class="total-font heavy-bold">$478.33</p>
+          </div>
+          <div class="percentage-container">
+            <p class="percentage-margin heavy-bold align-self-end">+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

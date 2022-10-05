@@ -1,3 +1,77 @@
+:root {
+  --salmon: hsl(10, 79%, 65%);
+  --cream: hsl(27, 66%, 92%);
+}
+
 body {
-  background-color: rgba(247, 233, 220, 255);
+  background-color: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  line-height: 0.5;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+/** Balance Container Styling **/
+.balance-container {
+  background-color: var(--salmon);
+  color: white;
+  height: 115px;
+}
+
+.balance-font {
+  margin-top: 1.5rem;
+  font-size: 32px;
+}
+
+/** Spending Container Styling **/
+.spending-container {
+  background-color: #fff;
+  margin-top: 1.5rem;
+}
+
+.total-font {
+  font-size: 48px;
+}
+
+/** Percentage Container Styling **/
+.percentage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.percentage-margin {
+  margin-bottom: 1rem;
+}
+
+/** Styling Shared Across Both Containers **/
+.shared-containers {
+  border: 1px solid transparent;
+  padding: 1.5rem;
+  border-radius: 18px;
+  max-width: 538px;
+}
+
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spending-paragraph-spacing {
+  margin-bottom: 1.5rem;
+}
+
+.heavy-bold {
+  font-weight: 700;
 }
