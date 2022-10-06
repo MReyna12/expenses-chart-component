@@ -15,7 +15,7 @@
   </head>
   <body>
     <main>
-      <div
+      <section
         class="balance-container shared-containers flex-space-between-center"
       >
         <div>
@@ -25,26 +25,31 @@
         <div>
           <img src="./public/logo.svg" alt="expenses component logo" />
         </div>
-      </div>
+      </section>
 
-      <div class="spending-container shared-containers">
+      <section class="spending-container shared-containers">
         <div>
-          <h1>Spending - Last 7 days</h1>
+          <h1 class="spending-title dark-brown">Spending - Last 7 days</h1>
         </div>
-        <div></div>
-        <div class="flex-space-between-center">
+        <div class="bar-graph-container"><canvas id="myChart"></canvas></div>
+        <div
+          class="flex-space-between-center margin-top-2 align-items-bottom padding-bottom"
+        >
           <div>
-            <p class="spending-paragraph-spacing">Total this month</p>
-            <p class="total-font heavy-bold">$478.33</p>
+            <p class="spending-paragraph-spacing medium-brown">
+              Total this month
+            </p>
+            <p class="total-font heavy-bold dark-brown">$478.33</p>
           </div>
           <div class="percentage-container">
             <p class="percentage-margin heavy-bold align-self-end">+2.4%</p>
-            <p>from last month</p>
+            <p class="medium-brown">from last month</p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

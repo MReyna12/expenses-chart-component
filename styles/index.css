@@ -1,21 +1,21 @@
 :root {
   --salmon: hsl(10, 79%, 65%);
   --cream: hsl(27, 66%, 92%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
 }
 
 body {
   background-color: var(--cream);
   font-family: "DM Sans", sans-serif;
-  line-height: 0.5;
   font-size: 18px;
 }
 
 * {
   box-sizing: border-box;
-}
-
-p {
+  line-height: 1;
   margin: 0;
+  padding: 0;
 }
 
 /** Balance Container Styling **/
@@ -51,7 +51,7 @@ p {
 }
 
 .percentage-margin {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /** Styling Shared Across Both Containers **/
@@ -69,9 +69,44 @@ p {
 }
 
 .spending-paragraph-spacing {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .heavy-bold {
   font-weight: 700;
+}
+
+/** Styling for Bar Graph Container **/
+.bar-graph-container {
+  border-bottom: 2px solid var(--cream);
+}
+
+#myChart {
+  margin-bottom: 1.5rem;
+}
+
+/** General **/
+.margin-top-2 {
+  margin-top: 2rem;
+}
+
+.dark-brown {
+  color: var(--dark-brown);
+}
+
+.medium-brown {
+  color: var(--medium-brown);
+}
+
+.align-items-bottom {
+  align-items: flex-end;
+}
+
+.spending-title {
+  font-size: 34px;
+  padding-top: 0.8rem;
+}
+
+.padding-bottom {
+  padding-bottom: 1.5rem;
 }
