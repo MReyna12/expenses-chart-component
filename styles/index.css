@@ -9,11 +9,6 @@ body {
   background-color: var(--cream);
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 * {
@@ -21,6 +16,12 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0rem 1rem;
 }
 
 /** Balance Container Styling **/
@@ -31,18 +32,13 @@ body {
 }
 
 .balance-font {
-  margin-top: 1.5rem;
-  font-size: 32px;
+  margin-top: 0.8rem;
 }
 
 /** Spending Container Styling **/
 .spending-container {
   background-color: #fff;
   margin-top: 1.5rem;
-}
-
-.total-font {
-  font-size: 48px;
 }
 
 /** Percentage Container Styling **/
@@ -64,7 +60,7 @@ body {
   border: 1px solid transparent;
   padding: 1.5rem;
   border-radius: 18px;
-  max-width: 538px;
+  max-width: 500px;
 }
 
 .flex-space-between-center {
@@ -108,7 +104,6 @@ body {
 }
 
 .spending-title {
-  font-size: 34px;
   padding-top: 0.8rem;
 }
 
